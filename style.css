@@ -1,0 +1,87 @@
+body {
+    font-family: 'ArcadeClassic', sans-serif;
+    text-align: center;
+    color: black;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    border-width: 4px;
+    border-style: outset;
+    border-color: darkgray;
+}
+
+#board div {
+    color: black;
+    font-size: 36px;
+    height: 44px;
+    width: 44px;
+    margin: 1px;
+    background-color: gray;
+    border-style: inherit;
+    border-width: 2px;
+    border-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board div:hover {
+    font-size: 48px;
+    background-color: dimgray;
+    border-style: inset;
+    border-color: inherit;
+}
+
+#board .alive {
+    content: 'as';
+    color: firebrick;
+    background-color: indianred;
+    border-color: lightcoral;
+}
+
+#board .died {
+    color: black;
+    font-size: 36px;
+    background-color: dimgray;
+    border-color: gray;
+}
+
+h1 {
+    letter-spacing: 20px;
+    margin-bottom: 0px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    font-family: 'ArcadeClassic', sans-serif;
+    font-size: 24px;
+    margin: 8px;
+    width: 150px;
+    height: 34px;
+    background-color: gray;
+    border-style: outset;
+    border-width: 4px;
+    border-color: darkgray;
+}
+
+button:hover {
+    font-size: 26px;
+    background-color: dimgray;
+    border-style: inset;
+    border-color: darkgray;
+}
